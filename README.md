@@ -1,156 +1,142 @@
-````md
-# Modelia AI Studio Assignment
+```markdown
+# Modelia Assignment
 
-## Overview
-
-Modelia AI Studio is a simplified AI-powered fashion studio web app built with **React + TypeScript + Vite**.  
-Users can upload images, type prompts, select styles, and generate mock AI fashion visuals.
-
-This project demonstrates modern front-end engineering practices including accessibility, error handling, performance optimizations, local storage persistence, and responsive design.
+![Vite](https://img.shields.io/badge/Vite-React-blue)
+![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)
+![Status](https://img.shields.io/badge/Version-v1.0.0-green)
 
 ---
 
-## Features
+## 🚀 Overview
 
-- **Image Upload & Preview**
-  - Supports PNG/JPG images (≤10MB)
-  - Client-side downscaling for large images
-- **Prompt Input**
-  - Enter a text prompt for AI generation
-- **Style Selection**
-  - Choose from multiple fashion styles: Editorial, Streetwear, Vintage
-- **Mock AI Generation**
-  - Simulates AI generation with 1–2s delay
-  - 20% chance of simulated errors
-- **Abort In-Flight Request**
-  - Cancel ongoing generation requests
-- **Loading Spinner**
-  - Visual feedback while generating
-- **Automatic Retry**
-  - Exponential backoff (max 3 attempts) on error
-- **History**
-  - Stores last 5 generations in `localStorage`
-  - Click to restore previous results
-- **Accessibility**
-  - Keyboard navigable
-  - Visible focus states
-  - ARIA attributes
-- **Performance Optimizations**
-  - Memoized components (React.memo)
-  - Lazy-loaded components
-- **Error Boundaries**
-  - Prevents app crash on runtime errors
-- **Responsive Design**
-  - Works on desktop and mobile
-- **TailwindCSS Styling**
-  - Modern and clean UI
+This is the **Modelia Frontend Assignment** built using **React + TypeScript + Vite**.  
+It includes reusable components, custom hooks, and local storage support for state persistence.
 
 ---
 
-## Tech Stack
+## 🛠 Tech Stack
 
-- **React 19** + **TypeScript**
-- **Vite** (fast bundler with HMR)
-- **TailwindCSS**
-- **ESLint + Prettier** (linting & formatting)
-- **LocalStorage Hooks** (history persistence)
-- **Optional Bonus Features**
-  - Memoization & Lazy loading
-  - Error boundaries
+- **Frontend Framework:** React 18 + TypeScript
+- **Build Tool:** Vite
+- **Styling:** Tailwind CSS
+- **State Management:** Custom Hooks + useLocalStorage
+- **Version Control:** Git & GitHub (with PR-based workflow)
 
 ---
 
-## Installation
-
-1. Clone the repository:
-
-```bash
-git clone <YOUR_GITHUB_REPO_URL>
-cd modelia-assignment
+## 📂 Project Structure
 ```
+
+modelia-assignment/
+├── src/
+│ ├── components/
+│ │ ├── ImageUploader.tsx
+│ │ ├── PromptInput.tsx
+│ │ ├── StyleSelector.tsx
+│ │ └── Spinner.tsx
+│ ├── hooks/
+│ │ ├── useImageHistory.ts
+│ │ └── useLocalStorage.ts
+│ ├── App.tsx
+│ ├── main.tsx
+│ └── index.css
+├── public/
+├── package.json
+├── tsconfig.json
+└── vite.config.ts
+
 ````
 
-2. Install dependencies:
+---
+
+## 🔧 Installation & Setup
+
+### **1️⃣ Clone the Repository**
+```bash
+git clone https://github.com/kishan-kumar-dev/modelia-assignment.git
+cd modelia-assignment
+````
+
+### **2️⃣ Install Dependencies**
 
 ```bash
 npm install
 ```
 
-3. Start the development server:
+### **3️⃣ Run the Development Server**
 
 ```bash
 npm run dev
 ```
 
-4. Open in browser:
-
-```
-http://localhost:5173
-```
+Your app will run at:
+[http://localhost:5173](http://localhost:5173)
 
 ---
 
-## Scripts
+## 🧩 Features
 
-| Command           | Description                             |
-| ----------------- | --------------------------------------- |
-| `npm run dev`     | Start Vite development server           |
-| `npm run build`   | Build production-ready app              |
-| `npm run preview` | Preview production build                |
-| `npm run lint`    | Run ESLint checks                       |
-| `npm run format`  | Run Prettier formatting on source files |
+- 📤 Upload images with validation
+- ✏️ Input prompts for image styling
+- 🎨 Select and apply multiple styles
+- 🕒 Local storage support to save user history
+- ⚡ Fast and lightweight build with Vite
 
 ---
 
-## Folder Structure
+## 🗂 Git Workflow
+
+We followed a **feature-branch + pull request** workflow:
+
+- `feature/components` → UI Components
+- `feature/hooks-history` → Hooks and state management
+
+---
+
+## 🔗 Pull Requests
+
+- [PR #1: Components](https://github.com/kishan-kumar-dev/modelia-assignment/pull/1)
+- [PR #2: Hooks & History](https://github.com/kishan-kumar-dev/modelia-assignment/pull/2)
+
+---
+
+## 🏷 Version
+
+Current stable release:
 
 ```
-modelia-assignment/
-├─ src/
-│  ├─ components/        # React components
-│  │  ├─ HistoryList.tsx
-│  │  ├─ ImageUploader.tsx
-│  │  ├─ PromptInput.tsx
-│  │  ├─ Spinner.tsx
-│  │  └─ StyleSelector.tsx
-│  ├─ hooks/             # Custom hooks
-│  │  ├─ useGenerateImage.ts
-│  │  └─ useLocalStorage.ts
-│  ├─ utils/             # Utility functions
-│  │  ├─ api.ts
-│  │  └─ resizeImage.ts
-│  ├─ App.tsx
-│  ├─ main.tsx
-│  └─ vite-env.d.ts
-├─ package.json
-├─ tsconfig.json
-├─ .eslintrc.js
-├─ prettier.config.cjs
-├─ .prettierignore
-├─ README.md
-└─ AI_USAGE.md
+v1.0.0
 ```
 
 ---
 
-## Notes
+## 🧪 Scripts
 
-- All code is **TypeScript strict mode** compatible.
-- **ESLint + Prettier** used for linting and formatting.
-- Bonus features included:
-  - Memoization & lazy loading
-  - Error boundaries
-
-- History persists across page reloads via `localStorage`.
-- Components are accessible and responsive.
-- Mock API simulates AI generation with retry and abort logic.
+| Command           | Description                            |
+| ----------------- | -------------------------------------- |
+| `npm run dev`     | Starts the Vite development server     |
+| `npm run build`   | Builds the project for production      |
+| `npm run preview` | Runs a preview of the production build |
 
 ---
 
-## Contact
+## 🤝 Contributing
 
-For questions or clarifications, contact:
-
-**\[Your Name]** Kishan Kumar
+1. Fork the repo
+2. Create a new feature branch
+3. Commit your changes
+4. Push and open a Pull Request
 
 ---
+
+## 📜 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+## 👨‍💻 Author
+
+**Kishan Kumar**
+[GitHub](https://github.com/kishan-kumar-dev)
+```
