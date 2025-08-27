@@ -1,4 +1,5 @@
-import React, { ChangeEvent } from "react";
+import React from "react";
+import type { ChangeEvent } from "react";
 import { resizeImage } from "../utils/resizeImage";
 
 interface Props {

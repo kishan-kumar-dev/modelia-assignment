@@ -1,4 +1,6 @@
-import React, { ChangeEvent } from 'react';
+import React from "react";
+import type { ChangeEvent } from "react";
+
 
 interface Props {
   value: string;
