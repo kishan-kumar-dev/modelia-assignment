@@ -1,45 +1,56 @@
+
 ```markdown
 # Modelia Assignment
 
 ![Vite](https://img.shields.io/badge/Vite-React-blue)
 ![TypeScript](https://img.shields.io/badge/TypeScript-Ready-blue)
 ![Status](https://img.shields.io/badge/Version-v1.0.0-green)
+![License](https://img.shields.io/github/license/kishan-kumar-dev/modelia-assignment)
+![Issues](https://img.shields.io/github/issues/kishan-kumar-dev/modelia-assignment)
+![Stars](https://img.shields.io/github/stars/kishan-kumar-dev/modelia-assignment?style=social)
 
 ---
 
 ## 🚀 Overview
 
 This is the **Modelia Frontend Assignment** built using **React + TypeScript + Vite**.  
-It includes reusable components, custom hooks, and local storage support for state persistence.
+It demonstrates reusable components, custom hooks, and state persistence with **local storage**.
+
+---
+
+## 🌐 Live Demo
+
+> Coming Soon — Will be deployed on **Vercel** or **Netlify**
 
 ---
 
 ## 🛠 Tech Stack
 
-- **Frontend Framework:** React 18 + TypeScript
-- **Build Tool:** Vite
-- **Styling:** Tailwind CSS
-- **State Management:** Custom Hooks + useLocalStorage
-- **Version Control:** Git & GitHub (with PR-based workflow)
+- **Frontend Framework:** React 18 + TypeScript  
+- **Build Tool:** Vite  
+- **Styling:** Tailwind CSS  
+- **State Management:** Custom Hooks + `useLocalStorage`  
+- **Version Control:** Git & GitHub (PR-based workflow)
 
 ---
 
 ## 📂 Project Structure
+
 ```
 
 modelia-assignment/
 ├── src/
-│ ├── components/
-│ │ ├── ImageUploader.tsx
-│ │ ├── PromptInput.tsx
-│ │ ├── StyleSelector.tsx
-│ │ └── Spinner.tsx
-│ ├── hooks/
-│ │ ├── useImageHistory.ts
-│ │ └── useLocalStorage.ts
-│ ├── App.tsx
-│ ├── main.tsx
-│ └── index.css
+│   ├── components/
+│   │   ├── ImageUploader.tsx
+│   │   ├── PromptInput.tsx
+│   │   ├── StyleSelector.tsx
+│   │   └── Spinner.tsx
+│   ├── hooks/
+│   │   ├── useImageHistory.ts
+│   │   └── useLocalStorage.ts
+│   ├── App.tsx
+│   ├── main.tsx
+│   └── index.css
 ├── public/
 ├── package.json
 ├── tsconfig.json
@@ -52,35 +63,61 @@ modelia-assignment/
 ## 🔧 Installation & Setup
 
 ### **1️⃣ Clone the Repository**
+
 ```bash
 git clone https://github.com/kishan-kumar-dev/modelia-assignment.git
 cd modelia-assignment
 ````
 
-### **2️⃣ Install Dependencies**
+### **2️⃣ Check Prerequisites**
+
+* Node.js >= 18.x
+* npm >= 9.x
+
+---
+
+### **3️⃣ Install Dependencies**
 
 ```bash
 npm install
 ```
 
-### **3️⃣ Run the Development Server**
+---
+
+### **4️⃣ Run the Development Server**
 
 ```bash
 npm run dev
 ```
 
-Your app will run at:
+Your app will be running at:
 [http://localhost:5173](http://localhost:5173)
+
+---
+
+### **5️⃣ Build for Production**
+
+```bash
+npm run build
+```
+
+---
+
+### **6️⃣ Preview Production Build**
+
+```bash
+npm run preview
+```
 
 ---
 
 ## 🧩 Features
 
-- 📤 Upload images with validation
-- ✏️ Input prompts for image styling
-- 🎨 Select and apply multiple styles
-- 🕒 Local storage support to save user history
-- ⚡ Fast and lightweight build with Vite
+* 📤 Upload images with validation
+* ✏️ Input prompts for image styling
+* 🎨 Select and apply multiple styles
+* 🕒 Local storage support to save user history
+* ⚡ Fast and lightweight build with Vite
 
 ---
 
@@ -88,15 +125,15 @@ Your app will run at:
 
 We followed a **feature-branch + pull request** workflow:
 
-- `feature/components` → UI Components
-- `feature/hooks-history` → Hooks and state management
+* `feature/components` → UI Components
+* `feature/hooks-history` → Hooks and state management
 
 ---
 
 ## 🔗 Pull Requests
 
-- [PR #1: Components](https://github.com/kishan-kumar-dev/modelia-assignment/pull/1)
-- [PR #2: Hooks & History](https://github.com/kishan-kumar-dev/modelia-assignment/pull/2)
+* [PR #1: Components](https://github.com/kishan-kumar-dev/modelia-assignment/pull/1)
+* [PR #2: Hooks & History](https://github.com/kishan-kumar-dev/modelia-assignment/pull/2)
 
 ---
 
@@ -120,9 +157,15 @@ v1.0.0
 
 ---
 
+## 🧪 Testing
+
+> Add testing scripts here when implemented.
+
+---
+
 ## 🤝 Contributing
 
-1. Fork the repo
+1. Fork the repository
 2. Create a new feature branch
 3. Commit your changes
 4. Push and open a Pull Request
@@ -138,5 +181,4 @@ This project is licensed under the **MIT License**.
 ## 👨‍💻 Author
 
 **Kishan Kumar**
-[GitHub](https://github.com/kishan-kumar-dev)
 ```
